@@ -1,0 +1,36 @@
+.counter {
+  max-width: 24rem;
+}
+
+.counter__display {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-2);
+  margin: var(--space-3) 0;
+}
+
+.counter__count {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.counter__doubled {
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+}
+
+.counter__controls {
+  display: flex;
+  gap: var(--space-1);
+  margin-bottom: var(--space-3);
+
+  .btn {
+    min-width: 3rem;
+  }
+}
+
+.counter__step {
+  max-width: 8rem;
+}

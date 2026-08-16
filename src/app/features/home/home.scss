@@ -1,0 +1,45 @@
+.hero {
+  margin-bottom: var(--space-4);
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: var(--space-1);
+  }
+
+  p {
+    max-width: 40rem;
+  }
+}
+
+.hero__links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: var(--space-2);
+  margin-bottom: var(--space-3);
+}
+
+.hero__link {
+  text-decoration: none;
+  color: inherit;
+  transition:
+    transform 0.15s ease,
+    border-color 0.15s ease;
+
+  h3 {
+    margin: 0 0 0.35rem;
+    color: var(--color-text);
+  }
+
+  p {
+    margin: 0;
+  }
+
+  &:hover {
+    border-color: var(--color-accent);
+    transform: translateY(-2px);
+  }
+}
+
+.hero__docs {
+  font-size: 0.875rem;
+}

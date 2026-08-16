@@ -1,11 +1,15 @@
-## Read and contribute to the Wiki
+## Submitting pull requests
 
-Make sure you read the [Wiki](https://github.com/gdi2290/angular-starter/wiki).
-
-## Submitting Pull Requests
-
-If you're changing the structure of the repository please create an issue first.
+If you're changing the structure of the repository, please open an issue first to discuss it.
 
 ## Submitting bug reports
 
-Make sure you are on latest changes and that you ran this command `npm run clean:install` after updating your local repository. If you can, please provide more information about your environment such as browser, operating system, node version, and npm version.
+Make sure you're on the latest commit and have run `npm install` after pulling. Please include your Node version, npm version, browser, and steps to reproduce.
+
+## Before opening a PR
+
+```bash
+npm run lint
+npm test
+npm run build
+```

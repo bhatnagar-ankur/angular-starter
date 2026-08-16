@@ -1,0 +1,14 @@
+<header class="app-shell__header">
+  <div class="app-shell__header-inner">
+    <span class="app-shell__brand">Angular Starter</span>
+    <nav class="app-shell__nav">
+      <a routerLink="/" routerLinkActive="is-active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+      <a routerLink="/about" routerLinkActive="is-active">About</a>
+      <a routerLink="/counter" routerLinkActive="is-active">Counter</a>
+    </nav>
+  </div>
+</header>
+
+<main class="app-shell__main">
+  <router-outlet />
+</main>

@@ -1,0 +1,20 @@
+<section class="counter card">
+  <h1>Counter</h1>
+  <p>A worked example: a signal-based service, a computed value, and a reactive form.</p>
+
+  <div class="counter__display" aria-live="polite">
+    <span class="counter__count" aria-label="Count: {{ count() }}">{{ count() }}</span>
+    <span class="counter__doubled">doubled: {{ doubled() }}</span>
+  </div>
+
+  <div class="counter__controls">
+    <button type="button" class="btn" (click)="decrement()">&minus;</button>
+    <button type="button" class="btn btn--primary" (click)="increment()">+</button>
+    <button type="button" class="btn" (click)="reset()">Reset</button>
+  </div>
+
+  <label class="field counter__step">
+    Step size
+    <input type="number" min="1" [formControl]="stepControl" />
+  </label>
+</section>
